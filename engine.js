@@ -24,11 +24,20 @@ window.addEventListener('mousemove', e=>{
 function renderSession(s){
   const total = (typeof TOTAL_SESSIONS !== 'undefined') ? TOTAL_SESSIONS : s.num;
   let html = `<span class="m-tag">Seans ${s.num} / ${total}</span><h3 class="m-title">${s.title}</h3>`;
-  html += `<div class="m-block"><h5>🎯 Seansın məqsədi</h5><div class="m-goal">${s.goal}</div></div>`;
+  if(s.about){
+    html += `<div class="m-block"><h5>ℹ️ Test haqqında</h5><div class="m-goal">${s.about}</div></div>`;
+  }
+  html += `<div class="m-block"><h5>🎯 Keçirilmə məqsədi (nəyi müəyyən edir)</h5><div class="m-goal">${s.goal}</div></div>`;
+  if(s.structure){
+    html += `<div class="m-block"><h5>🧱 Test strukturu (bölmə/sual sayı)</h5><div class="m-goal">${s.structure}</div></div>`;
+  }
+  if(s.administrator){
+    html += `<div class="m-block"><h5>🎓 Kimlər tətbiq edə bilər</h5><div class="m-goal">${s.administrator}</div></div>`;
+  }
   if(s.materials && s.materials.length){
     html += `<div class="m-block"><h5>🧰 Lazım olan materiallar</h5><div class="m-materials">${s.materials.map(m=>`<span>${m}</span>`).join('')}</div></div>`;
   }
-  html += `<div class="m-block"><h5>📋 Seansın gedişi</h5>`;
+  html += `<div class="m-block"><h5>📋 Tətbiq qaydası (A-dan Z-yə)</h5>`;
   s.phases.forEach(ph=>{
     html += `<div class="m-phase"><div class="ph-name">${ph.name}</div>`;
     (ph.text||[]).forEach(t=>{ html += `<p>${t}</p>`; });
