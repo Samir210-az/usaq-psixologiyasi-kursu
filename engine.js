@@ -53,6 +53,9 @@ function renderSession(s){
     html += `</div>`;
   });
   html += `</div>`;
+  if(s.scoring){
+    html += `<div class="m-block"><h5>📊 Xallandırma və Şərh Diapazonları</h5><div class="m-homework">${s.scoring}</div></div>`;
+  }
   if(s.homework){
     html += `<div class="m-block"><h5>📝 Ev tapşırığı</h5><div class="m-homework">${s.homework}</div></div>`;
   }
