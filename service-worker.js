@@ -1,4 +1,4 @@
-const CACHE_NAME = "uyp-kurs-v2-guard1-fbauth2";
+const CACHE_NAME = "uyp-kurs-v2-guard1-fbauth2-debug3";
 const CORE_ASSETS = [
   "./index.html",
   "./styles.css",
