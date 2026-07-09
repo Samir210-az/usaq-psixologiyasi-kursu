@@ -1,10 +1,10 @@
-const CACHE_NAME = "uyp-kurs-v2-guard1-fbauth2-debug3-diag2";
+const CACHE_NAME = "uyp-kurs-v2-guard1-fbauth2-debug3-diag2-v4name";
 const CORE_ASSETS = [
   "./index.html",
   "./styles.css",
   "./engine.js",
   "./protect.js",
-  "./guard.js",
+  "./guard-v4.js",
   "./logo.png",
   "./icon-192.png",
   "./icon-512.png",
