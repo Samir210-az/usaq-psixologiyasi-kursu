@@ -138,21 +138,126 @@
 
 <script>
 const lessons = [
-  {n:"01", icon:"🔍", title:"İlkin diaqnostika və rəsm analizi", desc:"Anamnez toplamadan tutmuş standartlaşdırılmış testlərə qədər 6 mərhələlik tam diaqnostik yol xəritəsi — rəsm analizinin oxunma meyarları, Denver II skrininqi və real klinik hadisə üzərində qurulmuş praktik nümunələrlə.", href:"01-ilkin-diaqnostika.html", active:true},
-  {n:"02", icon:"📊", title:"Psixoloji dəyərləndirmə vəsaitləri", desc:"Denver II-dən WISC-V-ə, CAT-dan Bender-Gestalt-a qədər 9 tanınmış klinik vasitənin elmi əsası, tətbiq protokolu və oxunma məntiqi — real klinik hadisə üzərində qurulmuş 8 tam seans proqramı ilə.", href:"02-deyerlendirme-vesaitleri.html", active:true},
-  {n:"03", icon:"🧩", title:"Autizm spektr pozuntusu və inkişaf ləngiməsi", desc:"ABA-nın ABC prinsipindən PECS, TEACCH və ESDM-ə qədər elmi əsaslı müdaxilə proqramları — real klinik hadisə, funksional davranış qiymətləndirməsi və 8 tam interaktiv seansla.", href:"03-autizm-aba.html", active:true},
-  {n:"04", icon:"⚡", title:"Diqqət əskikliyi və Hiperaktivlik (DEHB)", desc:"İcra funksiyalarından (inhibisyon, işlək yaddaş, planlaşdırma) tutmuş mükafat sisteminə qədər 15 tam interaktiv seans — real klinik hadisə, Conners-3 qiymətləndirməsi və valideyn idarəetmə təlimi ilə.", href:"04-dehb.html", active:true},
-  {n:"05", icon:"😴", title:"Yuxu və yemək pozuntuları", desc:"SOS yemək yanaşmasından bedtime fading texnikasına qədər 12 tam interaktiv seans — real klinik hadisə, sensor profil qiymətləndirməsi və food chaining metodu ilə.", href:"05-yuxu-yemek-pozuntusu.html", active:true},
-  {n:"06", icon:"😰", title:"Həyəcan-təşviş pozuntuları və qorxu", desc:"Qorxu Termometrindən tədrici məruzəetməyə qədər 13 tam interaktiv seans — real klinik hadisə, SCARED qiymətləndirməsi və koqnitiv restrukturizasiya texnikaları ilə.", href:"06-heyecan-qorxu.html", active:true},
-  {n:"07", icon:"🗣️", title:"Ünsiyyət çətinlikləri", desc:"Resseptiv, ekspressiv və praqmatik dildən AAC vasitələrinə qədər 8 tam interaktiv seans — real klinik hadisə və CELF dil qiymətləndirməsi ilə.", href:"07-unsiyyet-cetinlikleri.html", active:true},
-  {n:"08", icon:"🎭", title:"Davranış Pozuntusu", desc:"Davranışın Buzdağı modelindən token economy-yə qədər 18 tam interaktiv seans — real klinik hadisə, ECBI qiymətləndirməsi və valideyn idarəetmə təlimi ilə.", href:"08-davranis-pozuntusu.html", active:true},
-  {n:"09", icon:"🚽", title:"Tualet vərdişi proqramı", desc:"Bioloji hazırlıq göstəricilərindən müsbət gücləndirmə sisteminə qədər 8 tam interaktiv seans — real klinik hadisə və hazırlıq yoxlama siyahısı ilə.", href:"09-tualet-verdisi.html", active:true},
-  {n:"10", icon:"💧", title:"Enurez/Enkoprez proqramı", desc:"Zəng-yastıq sistemindən qəbizlik idarəsinə qədər 10 tam interaktiv seans — real klinik hadisə, pediatrik əməkdaşlıq və utancla iş texnikaları ilə.", href:"10-enurez-enkoprez.html", active:true},
-  {n:"11", icon:"🔁", title:"Exolaliya (ekolaliya) proqramı", desc:"Prizant funksiya analizindən Funksional Kommunikasiya Təliminə qədər 12 tam interaktiv seans — real klinik hadisə, Gestalt dil emalı modeli və konkret texnika izahları ilə.", href:"11-exolaliya.html", active:true},
-  {n:"12", icon:"📖", title:"Sərbəst öyrənmə çətinlikləri — Disleksiya", desc:"Orton-Gillingham üçkanal metodundan RAN qiymətləndirməsinə qədər 10 tam interaktiv iş dəftəri — real klinik hadisə və kompensasiya strategiyaları ilə.", href:"12-disleksiya.html", active:true},
-  {n:"13", icon:"😳", title:"TİK proqramı", desc:"YGTSS qiymətləndirməsindən CBIT/HRT-nin üç komponentinə qədər 18 tam interaktiv seans — real klinik hadisə, rəqabətli reaksiya texnikaları və ailə mühiti tənzimləməsi ilə.", href:"13-tik.html", active:true},
-  {n:"14", icon:"🤐", title:"Mutizm proqramı", desc:"Narahatlıq xəritələməsindən stimulus fading texnikasına qədər 12 tam interaktiv seans — real klinik hadisə, danışıq iyerarxiyası və məktəblə əməkdaşlıq strategiyaları ilə.", href:"14-mutizm.html", active:true},
-  {n:"15", icon:"👨‍👩‍👧", title:"Boşanmış ailələrin övladları ilə iş", desc:"Kinetik Ailə Rəsmindən BIFF valideyn kommunikasiyasına qədər 12 tam interaktiv seans — real klinik hadisə, keçid obyekti texnikası və günahkarlıq hissi ilə iş üsulları ilə.", href:"15-bosanma.html", active:true},
+  {
+    "n": "01",
+    "icon": "🔍",
+    "title": "İlkin diaqnostika və rəsm analizi",
+    "desc": "Anamnez toplamadan standartlaşdırılmış testlərə qədər 6 mərhələlik tam diaqnostik yol xəritəsi: ilkin görüşmə, sərbəst müşahidə (oyun otağında), rəsm analizinin oxunma meyarları, standartlaşdırılmış test tətbiqi, valideynlə struktur geribildirim müsahibəsi və nəticələrin bildirilməsi. Real klinik hadisə üzərində qurulmuş praktik nümunələrlə hər addım konkret göstərilir.",
+    "href": "01-ilkin-diaqnostika.html",
+    "active": true
+  },
+  {
+    "n": "02",
+    "icon": "📊",
+    "title": "Psixoloji dəyərləndirmə vəsaitləri",
+    "desc": "Denver II-dən WISC-V-ə, CAT-dan Bender-Gestalt-a qədər 9 tanınmış klinik qiymətləndirmə vasitəsinin elmi əsası, tətbiq protokolu və nəticələrin oxunma məntiqi. AGTE, Gessel İnkişaf Şkalası, Burdon/D2 diqqət testləri və autizm skrininq alətləri (M-CHAT-R/CARS-2) daxil olmaqla, real klinik hadisə üzərində qurulmuş 8 tam interaktiv seans proqramı.",
+    "href": "02-deyerlendirme-vesaitleri.html",
+    "active": true
+  },
+  {
+    "n": "03",
+    "icon": "🧩",
+    "title": "Autizm spektr pozuntusu və inkişaf ləngiməsi",
+    "desc": "ABA-nın ABC prinsipindən PECS, DTT, imitasiya təlimi və sosial bacarıqlara qədər elmi əsaslı müdaxilə proqramları. Funksional davranış qiymətləndirməsi (FBA) ilə başlayır, diskret tapşırıq təlimi və PECS mərhələ 1-lə davam edir, ümumiləşdirmə seansı və valideyn təlimi ilə tamamlanır — real klinik hadisə və 8 tam interaktiv seansla.",
+    "href": "03-autizm-aba.html",
+    "active": true
+  },
+  {
+    "n": "04",
+    "icon": "⚡",
+    "title": "Diqqət əskikliyi və Hiperaktivlik (DEHB)",
+    "desc": "İcra funksiyalarından (inhibisyon, işlək yaddaş, planlaşdırma) mükafat sisteminə qədər 15 tam interaktiv seans: psixotəhsildən diqqət gücləndirmə oyunlarına, 'Stop-Fikirləş-Hərəkət Et' özünütənzimləməsinə, vizual cədvəllərə, tapşırığın parçalanmasına (chunking) və token economy sisteminə qədər. Real klinik hadisə, Conners-3 qiymətləndirməsi və valideyn-müəllim əməkdaşlığı seansı ilə tamamlanır.",
+    "href": "04-dehb.html",
+    "active": true
+  },
+  {
+    "n": "05",
+    "icon": "😴",
+    "title": "Yuxu və yemək pozuntuları",
+    "desc": "SOS yemək yanaşmasından bedtime fading texnikasına qədər 12 tam interaktiv seans yuxu və yemək gündəliyi ilə başlayır, yatma vaxtı ayrılması, sensor əsaslı yemək həssaslığı qiymətləndirməsi və food chaining metodu ilə davam edir. Sensor profil qiymətləndirməsi, valideyn təlimi və real klinik hadisə hər addımı konkret göstərir.",
+    "href": "05-yuxu-yemek-pozuntusu.html",
+    "active": true
+  },
+  {
+    "n": "06",
+    "icon": "😰",
+    "title": "Həyəcan-təşviş pozuntuları və qorxu",
+    "desc": "Qorxu Termometrindən tədrici məruzəetməyə qədər 13 tam interaktiv seans: bədən siqnallarının tanınması, qutu nəfəsi, Nəzarət Dairəsi və Narahatlıq Vaxtı texnikaları, 'bəs əgər' fikirlərinin koqnitiv restrukturizasiyası, ayrılıq və sosial narahatlıqla ayrıca iş. Real klinik hadisə və SCARED qiymətləndirməsi ilə dəstəklənir, valideyn təlimi seansı ilə tamamlanır.",
+    "href": "06-heyecan-qorxu.html",
+    "active": true
+  },
+  {
+    "n": "07",
+    "icon": "🗣️",
+    "title": "Ünsiyyət çətinlikləri",
+    "desc": "Resseptiv, ekspressiv və praqmatik dildən AAC vasitələrinə qədər 8 tam interaktiv seans: dil qiymətləndirməsi və valideyn psixotəhsili ilə başlayır, resseptiv/ekspressiv dil gücləndirmə, növbə alma və göz təması bacarıqları, alternativ kommunikasiya tanıtımı ilə davam edir. Real klinik hadisə və CELF dil qiymətləndirməsi üzərində qurulub.",
+    "href": "07-unsiyyet-cetinlikleri.html",
+    "active": true
+  },
+  {
+    "n": "08",
+    "icon": "🎭",
+    "title": "Davranış Pozuntusu",
+    "desc": "Davranışın Buzdağı modelindən token economy-yə qədər 18 tam interaktiv seans: müsbət diqqət vaxtı, aydın təlimat vermə, planlaşdırılmış nəzərə almama, effektiv time-out, məyusluq dözümü və problem-həlli bacarıqları addım-addım işlənir. Real klinik hadisə, ECBI qiymətləndirməsi və valideyn idarəetmə təlimi ilə məktəb və ailə koordinasiyası vurğulanır.",
+    "href": "08-davranis-pozuntusu.html",
+    "active": true
+  },
+  {
+    "n": "09",
+    "icon": "🚽",
+    "title": "Tualet vərdişi proqramı",
+    "desc": "Bioloji hazırlıq göstəricilərindən müsbət gücləndirmə sisteminə qədər 8 tam interaktiv seans: hazırlıq qiymətləndirməsi, tualetlə tanışlıq, rutin vaxtların təyini, bədən siqnallarının tanınması, müstəqil geyinmə bacarıqları və qəzalarla sakit baş etmə addım-addım öyrədilir. Real klinik hadisə və hazırlıq yoxlama siyahısı ilə valideynə praktik bələdçi verilir.",
+    "href": "09-tualet-verdisi.html",
+    "active": true
+  },
+  {
+    "n": "10",
+    "icon": "💧",
+    "title": "Enurez/Enkoprez proqramı",
+    "desc": "Zəng-yastıq sistemindən qəbizlik idarəsinə qədər 10 tam interaktiv seans enurez və enkoprez üçün ayrıca yollar təqdim edir: pediatrik yönləndirmə, maye rejiminin tənzimlənməsi, cədvəlli tualet vaxtı və müsbət gücləndirmə sistemi. Real klinik hadisə, utancla iş texnikaları və irəliləyişin izlənməsi ilə valideynə addım-addım bələdçilik edir.",
+    "href": "10-enurez-enkoprez.html",
+    "active": true
+  },
+  {
+    "n": "11",
+    "icon": "🔁",
+    "title": "Exolaliya (ekolaliya) proqramı",
+    "desc": "Prizant funksiya analizindən Funksional Kommunikasiya Təliminə qədər 12 tam interaktiv seans: ABC məlumat toplama, Gestalt dil emalı modeli, kontrastiv dil modelləmə, tələb və növbə saxlama funksiyaları ilə iş, skript-əsaslı söhbət körpüsü və genişləndirilmiş modelləmə. Real klinik hadisə və konkret texnika izahları ilə ev-bağça əməkdaşlığına qədər aparır.",
+    "href": "11-exolaliya.html",
+    "active": true
+  },
+  {
+    "n": "12",
+    "icon": "📖",
+    "title": "Sərbəst öyrənmə çətinlikləri — Disleksiya",
+    "desc": "Orton-Gillingham üçkanal metodundan RAN qiymətləndirməsinə qədər 10 tam interaktiv iş dəftəri: fonoloji fərqindəlik, hərf-səs uyğunluğu, heca birləşdirmə, sürətli söz tanıma, təkrarlanan oxuma ilə səlislik və orfoqrafiya strategiyaları addım-addım qurulur. Real klinik hadisə və kompensasiya strategiyaları (texnologiya, güclü tərəflər) ilə tamamlanır.",
+    "href": "12-disleksiya.html",
+    "active": true
+  },
+  {
+    "n": "13",
+    "icon": "😳",
+    "title": "TİK proqramı",
+    "desc": "YGTSS qiymətləndirməsindən CBIT/HRT-nin üç komponentinə qədər 18 tam interaktiv seans: premonitor hissin fərqindəliyi, rəqabətli reaksiya təlimi hər tik üçün ayrıca, ailə mühitinin tənzimlənməsi, məktəblə əlaqə və damğalanmanın qarşısının alınması, stress idarəetməsi. Real klinik hadisə, rəqabətli reaksiya texnikaları və komorbid vəziyyətlərin (DEHB/OKB) skrininqi daxildir.",
+    "href": "13-tik.html",
+    "active": true
+  },
+  {
+    "n": "14",
+    "icon": "🤐",
+    "title": "Mutizm proqramı",
+    "desc": "Narahatlıq xəritələməsindən stimulus fading texnikasına qədər 12 tam interaktiv seans: 'donma reaksiyası' modeli ilə psixotəhsil, qeyri-verbal ünsiyyət körpüsü, pıçıltı səviyyəsindən normal səslə tək-söz cavablarına, qısa cümlələrə və yeni şəxslə tanışlığa tədricən keçid. Real klinik hadisə, danışıq iyerarxiyası və məktəblə əməkdaşlıq strategiyaları ilə dəstəklənir.",
+    "href": "14-mutizm.html",
+    "active": true
+  },
+  {
+    "n": "15",
+    "icon": "👨‍👩‍👧",
+    "title": "Boşanmış ailələrin övladları ilə iş",
+    "desc": "Kinetik Ailə Rəsmindən BIFF valideyn kommunikasiyasına qədər 12 tam interaktiv seans: emosiya termometri ilə hisslərin adlandırılması, bibliotherapy metodu ilə günahkarlıq hissi, loyallıq konflikti, paralel valideynlik və 'iki ev' modelinin sağlam qəbulu. Real klinik hadisə, keçid obyekti texnikası və günahkarlıq hissi ilə iş üsulları ilə tamamlanır.",
+    "href": "15-bosanma.html",
+    "active": true
+  }
 ];
 
 const grid = document.getElementById('grid');
