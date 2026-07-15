@@ -9,43 +9,53 @@
 - **CanlД± sayt:** https://samir210-az.github.io/usaq-psixologiyasi-kursu/
 - **Token:** Samir hЙ™r dЙ™fЙ™ yeni token vermЙ™lidir.
 - **GitHub Й™mЙ™liyyatlarД±:** Python `urllib.request` vЙ™ ya PowerShell `Invoke-RestMethod` ilЙ™. HЙ™r PUT-dan Й™vvЙ™l SHA Г§Й™k. BГјtГјn fayllar bitЙ™ndЙ™n sonra BД°R DЖЏFЖЏ `POST /repos/{repo}/pages/builds`.
-- **Struktur:** HЙ™r dilin Г¶z qovluДџu var: AZ = repo kГ¶kГј, RU = `/ru/`, TR = `/tr/`, EN = `/en/`. HЙ™r modulun `index.html`-dЙ™ kartД± var вЂ” **tЙ™rcГјmЙ™ olunmuЕџ modul ГјГ§Гјn href yerli fayla (mЙ™s. `04-dehb.html`) iЕџarЙ™ etmЙ™lidir, tЙ™rcГјmЙ™ hЙ™lЙ™ olunmayД±bsa `../NN-...html` (AZ-Й™ fallback) qalmalД±dД±r.**
+- **Struktur:** AZ = repo kГ¶kГј, RU = `/ru/`, TR = `/tr/`, EN = `/en/`. **TЙ™rcГјmЙ™ olunmuЕџ modul ГјГ§Гјn index.html-dЙ™ href yerli fayla iЕџarЙ™ etmЙ™lidir (mЙ™s. `07-....html`), tЙ™rcГјmЙ™ hЙ™lЙ™ yoxdursa `../NN-....html` (AZ-Й™ fallback) qalД±r.**
 
-## 2. STANDARTLAR (dЙ™yiЕџmЙ™yib вЂ” 1200 sГ¶z, hЙ™r fazada giriЕџв‰Ґ7/Й™sasв‰Ґ10/baДџlanД±Еџв‰Ґ5 dialoq cГјtГј, HЖЏR FAZADA CГњT SAY, Terapevtik QiymЙ™tlЙ™ndirmЙ™ FormasД±, s.)
+## 2. STANDARTLAR (dЙ™yiЕџmЙ™yib)
+HЙ™r fazada dialoq say tЙ™lЙ™bi: giriЕџв‰Ґ14, Й™sasв‰Ґ20, baДџlanД±Еџв‰Ґ10 array-entry (yЙ™ni 7/10/5 "cГјt"), HЖЏR FAZADA CГњT SAYDA ENTRY (parity). Min 1200 sГ¶z (hero-quote arasД±). Terapevtik QiymЙ™tlЙ™ndirmЙ™ FormasД±, 5 mГјtЙ™xЙ™ssis perspektivi, risk/bГ¶hran protokolu, biblioqrafiya bГ¶lmЙ™lЙ™ri hЙ™r modulda olmalД±dД±r.
 
-## 3. HAZIRKI VЖЏZД°YYЖЏT (dil-dil dЙ™qiqlЙ™Еџdirilib, 2026-07-16 tarixinЙ™)
+## 3. HAZIRKI VЖЏZД°YYЖЏT (bГјtГјn fayllar tЙ™k-tЙ™k canlД± repo-dan yoxlanД±lД±b, 2026-07-16)
 
-### TAM DЖЏRД°NLЖЏЕћDД°RД°LMД°Ећ VЖЏ BГњTГњN DД°LLЖЏRDЖЏ HAZIR:
-вњ… Modul 1, 2, 3 вЂ” AZ/RU/TR/EN
-вњ… Modul 8, 11, 12, 13, 14, 15 вЂ” etalon sЙ™viyyЙ™ (bГјtГјn dillЙ™rdЙ™)
+### вњ… AZ (kГ¶k qovluq): BГњTГњN 15 MODUL TAM DЖЏRД°NLЖЏЕћDД°RД°LД°B VЖЏ TЖЏSDД°QLЖЏNД°B.
+### вњ… EN (`/en/`): BГњTГњN MODULLAR (Й™n azД± 1-10 birbaЕџa yoxlanД±lД±b, 11-15 Й™vvЙ™lki sЙ™nЙ™dЙ™ gГ¶rЙ™ "etalon sЙ™viyyЙ™") TAM DЖЏRД°NLЖЏЕћDД°RД°LД°B.
+### рџџЎ RU (`/ru/`) vЙ™ TR (`/tr/`): YALNIZ Modul 1-7 MГ–VCUDDUR VЖЏ TЖЏSDД°QLЖЏNД°B. Modul 8-15 heГ§ bunlarda YOXDUR (fayl tamamilЙ™ yoxdur, tЙ™rcГјmЙ™ edilib yaradД±lmalД±dД±r).
 
-### QД°SMЖЏN HAZIR (dil-dil fЙ™rqlЙ™nir):
-рџџЎ **Modul 4 (DEHB)** вЂ” AZ вњ…, RU вњ…, TR вњ… dЙ™rinlЙ™Еџdirilib vЙ™ index.html-dЙ™ dГјzgГјn linklЙ™nib. **EN hЙ™lЙ™ dЙ™rinlЙ™ЕџdirilmЙ™yib** (Й™vvЙ™lki kГ¶hnЙ™/sЙ™thi mЙ™zmun qalД±b).
-рџџЎ **Modul 5 (Yuxu-yemЙ™k, 12 seans)** вЂ” AZ вњ…, RU вњ…, TR вњ…. **EN hЙ™lЙ™ dЙ™rinlЙ™ЕџdirilmЙ™yib.**
-рџџЎ **Modul 6 (HЙ™yЙ™can-qorxu, 13 seans)** вЂ” AZ вњ…, RU вњ…, TR вњ… (bu sessiyada TR yГјklЙ™ndi vЙ™ index.html linki dГјzЙ™ldildi). **EN hЙ™lЙ™ dЙ™rinlЙ™ЕџdirilmЙ™yib.**
+**QALAN Д°Ећ вЂ” DЖЏQIQ SД°YAHI (yalnД±z RU+TR tЙ™rcГјmЙ™si, AZ mЙ™zmunu hazД±rdД±r, tЙ™rcГјmЙ™ edib strukturu qorumaq kifayЙ™tdir):**
+| Modul | Ad | Seans sayД± | RU | TR |
+|---|---|---|---|---|
+| 8 | DavranД±Еџ Pozuntusu | 18 | вќЊ | вќЊ |
+| 9 | Tualet vЙ™rdiЕџi | 8 | вќЊ | вќЊ |
+| 10 | Enurez/Enkoprez | 10 | вќЊ | вќЊ |
+| 11 | Exolaliya | 12 | вќЊ | вќЊ |
+| 12 | Disleksiya | 10 | вќЊ | вќЊ |
+| 13 | Tik | 18 | вќЊ | вќЊ |
+| 14 | Mutizm | 12 | вќЊ | вќЊ |
+| 15 | BoЕџanma | 12 | вќЊ | вќЊ |
 
-### HЖЏLЖЏ DЖЏRД°N DEYД°L (bГјtГјn dillЙ™rdЙ™):
-вќЊ **Modul 7** (ГњnsiyyЙ™t Г§Й™tinliklЙ™ri, 8 seans)
-вќЊ **Modul 9** (Tualet vЙ™rdiЕџi, 8 seans)
-вќЊ **Modul 10** (Enurez/Enkoprez, 10 seans)
-
-**DГњZЖЏLDД°LMД°Ећ BUG (2026-07-16):** RU vЙ™ TR `index.html`-lЙ™rindЙ™ Modul 4/5/6 linklЙ™ri sЙ™hvЙ™n `../` ilЙ™ AZ kГ¶k faylД±na yГ¶nЙ™lirdi (tЙ™rcГјmЙ™ mГ¶vcud olsa belЙ™). Bu dГјzЙ™ldildi вЂ” indi yerli tЙ™rcГјmЙ™ faylД±na yГ¶nЙ™lir. **Yeni modul tЙ™rcГјmЙ™ edilib yГјklЙ™ndikdЙ™, index.html-dЙ™ uyДџun hrefi yerli fayla dЙ™yiЕџdirmЙ™yi UNUTMA.**
+Bu, 8 modul Г— 2 dil = 16 tam fayl tЙ™rcГјmЙ™si demЙ™kdir (cЙ™mi ~100 seans/dil). Modul 7-nin RU+TR tЙ™rcГјmЙ™si (8 seans) bir sГ¶hbЙ™tdЙ™ normal templЙ™ bitdi вЂ” bu sГјrЙ™tЙ™ gГ¶rЙ™ modul 8 vЙ™ 13 (18 seans) daha uzun Г§Й™kЙ™cЙ™k, kiГ§iklЙ™r (9,10,12) daha tez.
 
 ## 4. TГ–VSД°YЖЏ OLUNAN DAVAM STRATEGД°YASI
-
-Qalan iЕџ iki paralel istiqamЙ™tdЙ™:
-- **A) Modul 7, 9, 10-un dЙ™rinlЙ™ЕџdirilmЙ™si** (Й™vvЙ™lcЙ™ AZ, sonra RU/TR/EN tЙ™rcГјmЙ™si) вЂ” hЙ™r sГ¶hbЙ™tdЙ™ 1 modul.
-- **B) Modul 4, 5, 6-nД±n EN tЙ™rcГјmЙ™si** (mЙ™zmun artД±q AZ-da hazД±rdД±r, sadЙ™cЙ™ ingiliscЙ™yЙ™ uyДџunlaЕџdД±rД±lД±b yГјklЙ™nmЙ™lidir + index.html linki dГјzЙ™ldilmЙ™lidir).
+HЙ™r sГ¶hbЙ™tdЙ™ 1 modulun RU+TR tЙ™rcГјmЙ™sini bitir:
+- SГ¶hbЙ™t 1: Modul 9 (8 seans вЂ” Й™n kiГ§ik)
+- SГ¶hbЙ™t 2: Modul 12 (10 seans)
+- SГ¶hbЙ™t 3: Modul 10 (10 seans)
+- SГ¶hbЙ™t 4: Modul 11 (12 seans)
+- SГ¶hbЙ™t 5: Modul 14 (12 seans)
+- SГ¶hbЙ™t 6: Modul 15 (12 seans)
+- SГ¶hbЙ™t 7: Modul 8 (18 seans вЂ” bГ¶yГјk)
+- SГ¶hbЙ™t 8: Modul 13 (18 seans вЂ” bГ¶yГјk)
 
 HЙ™r modul ГјГ§Гјn iЕџ metodologiyasД±:
-1. FaylД± GitHub-dan endir, SESSIONS-u Г§Д±xar.
-2. HЙ™r seansД±n 3 fazasД±na (GiriЕџ/ЖЏsas/BaДџlanД±Еџ) Й™lavЙ™ real dialoq cГјtlЙ™ri yaz вЂ” mГ¶vcud "about" sahЙ™sindЙ™ki texnika adД±na uyДџun, real klinik mЙ™zmunla.
-3. CГјt sayД±nД± yoxla: giriЕџв‰Ґ7, Й™sasв‰Ґ10, baДџlanД±Еџв‰Ґ5, HЖЏR FAZADA CГњT SAYDA ENTRY (parity yoxla!).
-4. JS sintaksisini yoxla (script bloku Г§Д±xarД±b `node --check`).
-5. SГ¶z sayД±nД± yoxla (hero-quote arasД±, min 1200).
-6. GitHub-a yГјklЙ™ (SHA ilЙ™).
-7. **index.html-dЙ™ bu modulun hrefini yerli fayla yГ¶nlЙ™ndir (Й™gЙ™r tЙ™rcГјmЙ™ olunan dil AZ deyilsЙ™).**
-8. BГјtГјn fayllar bitЙ™ndЙ™ BД°R DЖЏFЖЏ pages build tetiklЙ™.
+1. AZ faylД±nД± GitHub-dan endir (mЙ™nbЙ™ mЙ™tn olaraq), quruluЕџu (head/topbar/footer) ГјГ§Гјn eyni modulun artД±q mГ¶vcud RU/TR faylД± YOXDURSA, Й™n yaxД±n nГ¶mrЙ™li mГ¶vcud RU/TR faylД±nД± struktur Еџablonu kimi istifadЙ™ et (mЙ™s. `ru/07-...html`).
+2. BГјtГјn bГ¶lmЙ™lЙ™ri (elmi tЙ™rif, tЙ™snifat, 5 mГјtЙ™xЙ™ssis, yaЕџ qruplarД±, Й™sas model, klinik hadisЙ™, worksheet-lЙ™r, SESSIONS massivi, risk protokolu, biblioqrafiya, xГјlasЙ™) tЙ™rcГјmЙ™ et вЂ” dialoqlarД± sГ¶z-be-sГ¶z deyil, tЙ™bii klinik dillЙ™.
+3. UЕџaq adД±nД± AZ mЙ™nbЙ™dЙ™ki adla eyni saxla (mЙ™s. "Leyla" в†’ RU-da "Р›РµР№Р»Р°", TR-da "Leyla").
+4. CГјt sayД±nД± yoxla: giriЕџв‰Ґ14, Й™sasв‰Ґ20, baДџlanД±Еџв‰Ґ10 entry, HЖЏR FAZADA CГњT SAY (parity) вЂ” bax `validate-phase.js` mЙ™ntiqi (script bloku Г§Д±xar, SESSIONS array-i bracket-balance ilЙ™ Г§Д±xar, `eval()` et, `dialog.length` yoxla).
+5. Script blokunu ayД±rД±b `node --check` ilЙ™ JS sintaksisini yoxla.
+6. SГ¶z sayД±nД± yoxla (hero-quote arasД±, min 1200).
+7. GitHub-a **yeni fayl kimi** yГјklЙ™ (bu modul RU/TR-dЙ™ hЙ™lЙ™ yoxdur, SHA lazД±m deyil).
+8. HЙ™min dilin `index.html`-indЙ™ bu modulun hrefini `../NN-...html`-dЙ™n `NN-...html`-Й™ dЙ™yiЕџdir (SHA ilЙ™ PUT).
+9. ЖЏvvЙ™lki modulun (mЙ™s. modul 8 ГјГ§Гјn modul 7) nav-bottom "next" linkini yoxla вЂ” artД±q yerli olmalД±dД±r, adЙ™tЙ™n Й™vvЙ™lcЙ™dЙ™n dГјzgГјn qoyulub.
+10. BГјtГјn fayllar bitЙ™ndЙ™ BД°R DЖЏFЖЏ `POST /repos/{repo}/pages/builds`, "built" statusunu tЙ™sdiqlЙ™.
 
 ## 5. SAMД°RД°N ЖЏSAS TЖЏLД°MATLARI
 - Mehriban, sadЙ™, AzЙ™rbaycan dilindЙ™ danД±Еџ, "dostum"/"MГјdir" xitabД±.
