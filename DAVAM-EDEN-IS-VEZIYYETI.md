@@ -18,13 +18,13 @@ HЙ™r fazada dialoq say tЙ™lЙ™bi: giriЕџв‰Ґ14, Й™sasв‰Ґ20, 
 
 ### вњ… AZ (kГ¶k qovluq): BГњTГњN 15 MODUL TAM DЖЏRД°NLЖЏЕћDД°RД°LД°B VЖЏ TЖЏSDД°QLЖЏNД°B.
 ### вњ… EN (`/en/`): BГњTГњN MODULLAR (Й™n azД± 1-10 birbaЕџa yoxlanД±lД±b, 11-15 Й™vvЙ™lki sЙ™nЙ™dЙ™ gГ¶rЙ™ "etalon sЙ™viyyЙ™") TAM DЖЏRД°NLЖЏЕћDД°RД°LД°B.
-### рџџЎ RU (`/ru/`) vЙ™ TR (`/tr/`): YALNIZ Modul 1-7 MГ–VCUDDUR VЖЏ TЖЏSDД°QLЖЏNД°B. Modul 8-15 heГ§ bunlarda YOXDUR (fayl tamamilЙ™ yoxdur, tЙ™rcГјmЙ™ edilib yaradД±lmalД±dД±r).
+### рџџЎ RU (`/ru/`) vЙ™ TR (`/tr/`): Modul 1-7 VЖЏ Д°NDД° Modul 9 DA MГ–VCUDDUR VЖЏ TЖЏSDД°QLЖЏNД°B. Modul 8, 10-15 heГ§ bunlarda YOXDUR (fayl tamamilЙ™ yoxdur, tЙ™rcГјmЙ™ edilib yaradД±lmalД±dД±r).
 
 **QALAN Д°Ећ вЂ” DЖЏQIQ SД°YAHI (yalnД±z RU+TR tЙ™rcГјmЙ™si, AZ mЙ™zmunu hazД±rdД±r, tЙ™rcГјmЙ™ edib strukturu qorumaq kifayЙ™tdir):**
 | Modul | Ad | Seans sayД± | RU | TR |
 |---|---|---|---|---|
 | 8 | DavranД±Еџ Pozuntusu | 18 | вќЊ | вќЊ |
-| 9 | Tualet vЙ™rdiЕџi | 8 | вќЊ | вќЊ |
+| 9 | Tualet vЙ™rdiЕџi | 8 | вњ… | вњ… |
 | 10 | Enurez/Enkoprez | 10 | вќЊ | вќЊ |
 | 11 | Exolaliya | 12 | вќЊ | вќЊ |
 | 12 | Disleksiya | 10 | вќЊ | вќЊ |
@@ -32,18 +32,17 @@ HЙ™r fazada dialoq say tЙ™lЙ™bi: giriЕџв‰Ґ14, Й™sasв‰Ґ20, 
 | 14 | Mutizm | 12 | вќЊ | вќЊ |
 | 15 | BoЕџanma | 12 | вќЊ | вќЊ |
 
-Bu, 8 modul Г— 2 dil = 16 tam fayl tЙ™rcГјmЙ™si demЙ™kdir (cЙ™mi ~100 seans/dil). Modul 7-nin RU+TR tЙ™rcГјmЙ™si (8 seans) bir sГ¶hbЙ™tdЙ™ normal templЙ™ bitdi вЂ” bu sГјrЙ™tЙ™ gГ¶rЙ™ modul 8 vЙ™ 13 (18 seans) daha uzun Г§Й™kЙ™cЙ™k, kiГ§iklЙ™r (9,10,12) daha tez.
+Qalan: 7 modul Г— 2 dil = 14 tam fayl tЙ™rcГјmЙ™si (cЙ™mi ~92 seans/dil). Modul 7 vЙ™ Modul 9-un RU+TR tЙ™rcГјmЙ™si hЙ™r biri bir sГ¶hbЙ™tdЙ™ normal templЙ™ bitdi вЂ” bu sГјrЙ™tЙ™ gГ¶rЙ™ modul 8 vЙ™ 13 (18 seans) daha uzun Г§Й™kЙ™cЙ™k, kiГ§iklЙ™r (10,12) daha tez.
 
 ## 4. TГ–VSД°YЖЏ OLUNAN DAVAM STRATEGД°YASI
 HЙ™r sГ¶hbЙ™tdЙ™ 1 modulun RU+TR tЙ™rcГјmЙ™sini bitir:
-- SГ¶hbЙ™t 1: Modul 9 (8 seans вЂ” Й™n kiГ§ik)
-- SГ¶hbЙ™t 2: Modul 12 (10 seans)
-- SГ¶hbЙ™t 3: Modul 10 (10 seans)
-- SГ¶hbЙ™t 4: Modul 11 (12 seans)
-- SГ¶hbЙ™t 5: Modul 14 (12 seans)
-- SГ¶hbЙ™t 6: Modul 15 (12 seans)
-- SГ¶hbЙ™t 7: Modul 8 (18 seans вЂ” bГ¶yГјk)
-- SГ¶hbЙ™t 8: Modul 13 (18 seans вЂ” bГ¶yГјk)
+- SГ¶hbЙ™t 1: Modul 12 (10 seans)
+- SГ¶hbЙ™t 2: Modul 10 (10 seans)
+- SГ¶hbЙ™t 3: Modul 11 (12 seans)
+- SГ¶hbЙ™t 4: Modul 14 (12 seans)
+- SГ¶hbЙ™t 5: Modul 15 (12 seans)
+- SГ¶hbЙ™t 6: Modul 8 (18 seans вЂ” bГ¶yГјk)
+- SГ¶hbЙ™t 7: Modul 13 (18 seans вЂ” bГ¶yГјk)
 
 HЙ™r modul ГјГ§Гјn iЕџ metodologiyasД±:
 1. AZ faylД±nД± GitHub-dan endir (mЙ™nbЙ™ mЙ™tn olaraq), quruluЕџu (head/topbar/footer) ГјГ§Гјn eyni modulun artД±q mГ¶vcud RU/TR faylД± YOXDURSA, Й™n yaxД±n nГ¶mrЙ™li mГ¶vcud RU/TR faylД±nД± struktur Еџablonu kimi istifadЙ™ et (mЙ™s. `ru/07-...html`).
