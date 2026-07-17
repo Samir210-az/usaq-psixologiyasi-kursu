@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
 <script>document.documentElement.style.visibility='hidden';</script>
@@ -104,6 +104,17 @@
     .stats{gap:26px;}
     header{padding:64px 18px 34px;}
   }
+
+  .hero-illust{
+    position:relative;
+    width:min(440px, 82vw);
+    height:230px;
+    margin:34px auto 8px;
+    animation:fadeUp 1s ease both .32s;
+  }
+  .hero-illust svg{position:absolute; inset:0; width:100%; height:100%; overflow:visible;}
+  .hero-illust .layer{will-change:transform; transition:transform .1s linear;}
+
 </style>
 </head>
 <body>
@@ -127,6 +138,38 @@
     <span class="eyebrow">Profesyonel Gelişim Programı</span>
     <h1>Çocuk ve Ergen Psikolojisi<br><span class="kurs-word">KURSU</span></h1>
     <p class="sub">Erken tanıdan otizm, DEHB, davranış, konuşma ve duygusal bozukluklarla çalışmaya kadar — klinik temelli, seans seans yapılandırılmış 15 tam program.</p>
+
+    <div class="hero-illust" aria-hidden="true">
+      <svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroGradUP" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#8a6a3a"/>
+            <stop offset="100%" stop-color="#d9a85a"/>
+          </linearGradient>
+        </defs>
+        <g class="layer" data-speed="5" data-scroll-y="0.012">
+          <path d="M40 210 C160 210 160 20 400 20" fill="none" stroke="var(--border)" stroke-width="1" stroke-dasharray="1 9" opacity="0.45"/>
+        </g>
+        <g class="layer" data-speed="11" data-scroll-y="0.022">
+          <path d="M50 196 C110 196 108 150 168 140 C232 129 226 88 292 74 C334 65 340 46 372 40" fill="none" stroke="url(#heroGradUP)" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+        </g>
+        <g class="layer" data-speed="20" data-scroll-y="0.038">
+          <circle cx="50" cy="196" r="7" fill="var(--violet)"/>
+          <circle cx="168" cy="140" r="8" fill="var(--teal)"/>
+          <circle cx="292" cy="74" r="9" fill="var(--amber)"/>
+          <g transform="translate(372,40)">
+            <circle r="15" fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="1.8"/>
+            <circle cx="-3" cy="-3" r="7" fill="none" stroke="var(--text-1)" stroke-width="1.6"/>
+            <path d="M2 2 L9 9" stroke="var(--text-1)" stroke-width="1.8" stroke-linecap="round"/>
+          </g>
+          <path d="M120 60 L128 60 M124 56 L124 64" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" opacity="0.75"/>
+          <path d="M340 150 L348 150 M344 146 L344 154" stroke="var(--violet)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+          <circle cx="230" cy="170" r="2.6" fill="var(--amber)" opacity="0.8"/>
+        </g>
+      </svg>
+    </div>
+
+    
     <div class="stats">
       <div class="stat"><b>15</b><span>KONU</span></div>
       <div class="stat"><b>250+</b><span>SEANS</span></div>
@@ -319,6 +362,26 @@ window.addEventListener('scroll', ()=>{
     b.style.transform += ` translateY(${y*0.05*(i+1)}px)`;
   });
 });
+
+// Hero illustration parallax (layered, subtler than background blobs)
+const heroLayers = document.querySelectorAll('.hero-illust .layer');
+window.addEventListener('mousemove', e=>{
+  const hmx = (e.clientX/window.innerWidth - 0.5);
+  const hmy = (e.clientY/window.innerHeight - 0.5);
+  heroLayers.forEach(l=>{
+    const s = parseFloat(l.dataset.speed);
+    const sy = (parseFloat(l.dataset.scrollY)||0) * (window.scrollY||0);
+    l.style.transform = `translate(${hmx*s}px, ${hmy*s + sy}px)`;
+  });
+});
+window.addEventListener('scroll', ()=>{
+  const y = window.scrollY;
+  heroLayers.forEach(l=>{
+    const sy = parseFloat(l.dataset.scrollY)||0;
+    l.style.transform += ` translateY(${y*sy}px)`;
+  });
+}, {passive:true});
+
 </script>
 <script src="../protect.js" defer></script>
 <script src="../pwa.js" defer></script>
